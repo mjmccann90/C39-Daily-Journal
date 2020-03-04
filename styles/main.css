@@ -1,0 +1,136 @@
+body {
+  background: url("../images/brickwall.png");
+}
+
+form {
+  align-items: center;
+  max-width: 500px;
+  margin: auto;
+}
+
+.typewriter {
+  align-self: center;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 90%;
+  border-radius: 68px;
+  background-color: rgb(106, 133, 190);
+  margin: auto;
+  position: relative;
+  top: 56px;
+}
+
+h4 {
+  margin: 0px;
+  font-family: "Courier Prime", monospace;
+}
+
+/* .form-entry-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 90%;
+  border-radius: 10px;
+  background-color: rgb(106, 133, 190);
+} */
+
+.form--top,
+.form--entry,
+.form--concepts-covered {
+  padding: 0.3em 0.6em;
+}
+
+.form--top {
+  padding-top: 0.6em;
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-body {
+  border-radius: 5px;
+  max-width: 350px;
+  margin: auto;
+  position: relative;
+  top: -15px;
+}
+
+.main-container {
+  position: relative;
+  text-align: center;
+}
+
+.form-container {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#journalDate {
+  border-radius: 0.15em;
+  border: none;
+  height: 2em;
+  color: rgb(48, 48, 48);
+  align-self: baseline;
+  margin-right: 10px;
+}
+
+#mood-opt-group {
+  float: right;
+  height: 2em;
+  background-color: rgb(255, 255, 255);
+  border-radius: 0.15em;
+  border: none;
+  color: rgb(48, 48, 48);
+  font-family: "Courier Prime", monospace;
+}
+
+#journalConcepts {
+  width: -webkit-fill-available;
+  height: 2em;
+  border-radius: 0.15em;
+  border: none;
+  font-family: "Courier Prime", monospace;
+  padding-left: 2px;
+}
+
+#journalEntry {
+  font-family: "Courier Prime", monospace;
+  width: -webkit-fill-available;
+  color: rgb(48, 48, 48);
+  height: 5em;
+  border-radius: 0.15em;
+  border: none;
+}
+
+/* Submit button styling */
+.form--entry-submit {
+  padding-left: 188px;
+  padding-bottom: 18px;
+}
+.form--entry-submit-button {
+  box-shadow: 0px 3px 0px 0px #c0d6e4;
+  background: linear-gradient(to bottom, #f5f9f4 5%, #bab1ba 100%);
+  background-color: #f5f9f4;
+  border-radius: 6px;
+  border: 1px solid #c0d6e4;
+  display: inline-block;
+  cursor: pointer;
+  color: #4f656b;
+  font-family: "Courier Prime", monospace;
+  font-size: 17px;
+  padding: 9px 4px;
+  text-decoration: none;
+  text-shadow: 0px 0px 0px #e1e2ed;
+}
+.form--entry-submit-button:hover {
+  background: linear-gradient(to bottom, #bab1ba 5%, #f5f9f4 100%);
+  background-color: #bab1ba;
+}
+.form--entry-submit-button:active {
+  position: relative;
+  top: 1px;
+}
