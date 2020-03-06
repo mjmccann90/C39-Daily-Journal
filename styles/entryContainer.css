@@ -3,16 +3,21 @@
   -webkit-transform: perspective(900px);
   -webkit-transform-style: preserve-3d;
 }
+#flex-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
 
 .entry-card {
   text-align: center;
   position: absolute;
-  left: 100px;
   width: 250px;
   height: 350px;
   margin-top: 10px;
   margin-bottom: 10px;
-  background: linear-gradient(#467d9f, #5a9ab7), #a4dafb;
+  background: linear-gradient(#467d9f, #5a9ab7, #a4dafb);
   transition: 0.6s;
 
   transform: rotatex(75deg) translatey(-200px) translatez(-100px);
@@ -24,6 +29,17 @@
   transform: rotatez(0deg);
   transition: 0.6s;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+}
+
+#entryObjContainer {
+  /* margin-top: 15px; */
+  margin-right: 50px;
+  margin-left: 50px;
+  display: flex;
+  flex-direction: row;
+  width: 21%;
+  height: 20%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 h3 {

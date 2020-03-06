@@ -21,6 +21,13 @@ const journal = [
         concept: "Complex Flexbox",
         entry: "I tried to have an element in my Flexbox layout also be another Flexbox layout. It hurt my brain. I hate Steve.",
         mood: "Sad"
+    },
+    {
+        id: 3,
+        date: "03/06/202",
+        concept: "Complex Flexbox",
+        entry: "Made all the cards display in a lovely way",
+        mood: "😙"
     }
 ]
 

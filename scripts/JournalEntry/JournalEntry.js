@@ -1,6 +1,6 @@
 const EntryComponent = (journalEntryObject) => {
     return `
-    <section entry--${journalEntryObject.id}>
+    <section id="entryObjContainer" entry--${journalEntryObject.id}>
         <div class ="entry-card">
                 <h3>Journal Date: ${journalEntryObject.date}</h3>
                 <p>Concepts Covered: ${journalEntryObject.concept}<>
