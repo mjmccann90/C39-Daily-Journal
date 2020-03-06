@@ -1,7 +1,10 @@
 import { useJournalEntries } from "./JournalEntryDataProvider.js"
-import EntryCard from "./JournalEntry.js"
+import EntryComponent from "./JournalEntry.js"
+
+const contentElement = document.querySelector(".journal-entry-container")
 
 const JournalEntryList = () => {
+    const entries = useJournalEntries()
 
     // 1. Get the data from the provider
     // 2. Iterate the array
@@ -9,12 +12,13 @@ const JournalEntryList = () => {
     // 4. Put in the DOM
 
     // Get a reference to the `<article class="content">` element
-    const contentElement = document.querySelector(".journal-entry-container")
-    const entries = useJournalEntries()
-
+    let HTMLRepresentation = " "
     for (const journalEntryObject of entries) {
-        contentElement.innerHTML += EntryCard(journalEntryObject)
+        HTMLRepresentation += EntryComponent(journalEntryObject)
     }
+    contentElement.innerHTML = `
+    ${HTMLRepresentation}
+    `
 }
 
 export default JournalEntryList

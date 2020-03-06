@@ -1,12 +1,14 @@
-const EntryCard = (journalEntryObject) => {
+const EntryComponent = (journalEntryObject) => {
     return `
-        <div class ="entryBackground">
-                <h2>Journal Date: ${journalEntryObject.date}</h2>
-                <h3>Concepts Covered: ${journalEntryObject.concept}</h3>
+    <section entry--${journalEntryObject.id}>
+        <div class ="entry-card">
+                <h3>Journal Date: ${journalEntryObject.date}</h3>
+                <p>Concepts Covered: ${journalEntryObject.concept}<>
                 <p>Journal Entry: ${journalEntryObject.entry}</p>
-                <h3>Mood for the day: ${journalEntryObject.mood}</h3>
+                <p>Mood for the day: ${journalEntryObject.mood}</p>
         </div>
+    </section>
     `
 }
 
-export default EntryCard
+export default EntryComponent
